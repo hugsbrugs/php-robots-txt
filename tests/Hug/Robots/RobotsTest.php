@@ -101,12 +101,12 @@ final class RobotsTest extends TestCase
     /**
      *
      */
-    public function testCanEmptyCache()
+    /*public function testCanEmptyCache()
     {
     	$data = realpath(__DIR__ . '/../../../data/');
 		define('HUG_ROBOTS_CACHE_PATH', $data . '/');
         $test = Robots::empty_cache();
         $this->assertTrue($test);
-    }
+    }*/
 
 }
