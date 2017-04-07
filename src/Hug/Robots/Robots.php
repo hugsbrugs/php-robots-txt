@@ -171,6 +171,11 @@ class Robots
 		// Check url against our list of rules
 
 	    $parsed_url = parse_url($url);
+	    
+	    // Hug ++
+	    if(!isset($parsed_url['path']))
+	    	$parsed_url['path'] = '';
+	    // Hug ++
 
 		$allowed = true;
 		$max_length = 0;

@@ -40,7 +40,7 @@ final class RobotsTest extends TestCase
      */
     public function testCanDownloadRobots()
     {
-        $res = Robots::download_robots($this->url_allowed, $this->user_agent);
+        $test = Robots::download_robots($this->url_allowed, $this->user_agent);
         $this->assertInternalType('string', $test);
     }
 
@@ -66,7 +66,8 @@ final class RobotsTest extends TestCase
      */
     public function testCanIsCacheObsolete()
     {
-        $res = Robots::is_cache_obsolete($this->file);
+    	define('HUG_ROBOTS_CACHE_DURATION', 86400);
+        $test = Robots::is_cache_obsolete($this->file);
         $this->assertFalse($test);
     }
 
