@@ -24,3 +24,6 @@ $url = 'https://hugo.maugey.fr/coco/coucou.html';
 
 $is_allowed = Robots::is_allowed($url, $user_agent);
 var_dump($is_allowed);
+
+$empty_cache = Robots::empty_cache();
+var_dump($empty_cache);

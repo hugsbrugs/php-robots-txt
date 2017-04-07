@@ -215,7 +215,7 @@ class Robots
 
 		if(defined('HUG_ROBOTS_CACHE_PATH'))
 		{
-			if(FileSystem::rrmdir(HUG_ROBOTS_CACHE_PATH))
+			if(FileSystem::rrmdir(HUG_ROBOTS_CACHE_PATH, false))
 			{
 				$reset = true;
 			}
