@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":323:{a:2:{s:7:"defects";a:1:{s:34:"RobotsTest::testCanIsCacheObsolete";i:4;}s:5:"times";a:5:{s:33:"RobotsTest::testCanDownloadRobots";d:0.167;s:28:"RobotsTest::testCanGetRobots";d:0.11;s:34:"RobotsTest::testCanIsCacheObsolete";d:0.007;s:28:"RobotsTest::testCanIsAllowed";d:0.106;s:31:"RobotsTest::testCannotIsAllowed";d:0.106;}}}

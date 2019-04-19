@@ -20,7 +20,7 @@ final class RobotsTest extends TestCase
 	public $user_agent = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0';
 
 
-	function __construct()
+	function setUp(): void
 	{
 		$data = realpath(__DIR__ . '/../../../data/');
 		
@@ -41,7 +41,7 @@ final class RobotsTest extends TestCase
     public function testCanDownloadRobots()
     {
         $test = Robots::download_robots($this->url_allowed, $this->user_agent);
-        $this->assertInternalType('string', $test);
+        $this->assertIsString($test);
     }
 
     /* ************************************************* */
@@ -54,7 +54,7 @@ final class RobotsTest extends TestCase
     public function testCanGetRobots()
     {
         $test = Robots::get_robots($this->url_allowed, $this->user_agent);
-        $this->assertInternalType('string', $test);
+        $this->assertIsString($test);
     }
 
     /* ************************************************* */
